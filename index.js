@@ -36,3 +36,19 @@ app.use(express.urlencoded({extended:true}));
 
 // session-protection middleware
 app.use(authMiddleware);
+
+
+
+
+
+
+
+
+
+
+// start server
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log('The server is listening...');
+  console.log(`Visit your site at http://localhost:${port}`);
+});
